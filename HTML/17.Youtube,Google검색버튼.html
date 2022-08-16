@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 데모</title>
+</head>
+
+<body>
+    <h1>Form 데모</h1>
+
+    <button>Form 밖에 있는 버튼</button>
+    <form action="/tacos">
+        <p>
+            <!-- file:///C:/tacos?id=id -->
+            <label for="Id">ID: </label>
+            <input id="Id" type="text" placeholder="아이디를 입력해주세요." name="id">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw -->
+            <label for="Pw">PW: </label>
+            <input id="Pw" type="password" placeholder="비밀번호를 입력해주세요." name="pw">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw&color=%23ff0000 -->
+            <label for="Color">Color: </label>
+            <input id="Color" type="color" name="color">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw&color=%23ff0000&datetime-local=2022-08-16T19%3A41 -->
+            <label for="Datetime">Datetime: </label>
+            <input id="Datetime" type="datetime-local" name="datetime-local">
+        </p>
+        <button>Form 안에 있는 버튼</button>
+        <button type="button">type이 버튼이면, Form 제출안함 button</button>
+    </form>
+
+    <!-- Youtube로 form 제출 버튼 구현 -->
+    <form action="https://www.youtube.com/results">
+        <p>
+            <label for="search_youtube">검색란: </label>
+            <input id="search_youtube" type="text" placeholder="유튜브에서 보고 싶은 것은?" name="search_query">
+            <button>검색하기</button>
+        </p>
+    </form>
+
+    <form action="https://www.google.co.kr/search">
+        <p>
+            <label for="search_google">검색란: </label>
+            <input id="search_google" type="text" placeholder="구글에서 검색하고 싶은 것은?" name="q">
+            <button>검색하기</button>
+        </p>
+    </form>
+
+</body>
+
+</html>
