@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 데모</title>
+</head>
+
+<body>
+    <h1>Form 데모</h1>
+
+    <button>Form 밖에 있는 버튼</button>
+    <form action="/tacos">
+        <p>
+            <!-- file:///C:/tacos?id=id -->
+            <label for="Id">ID: </label>
+            <input id="Id" type="text" placeholder="아이디를 입력해주세요." name="id">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw -->
+            <label for="Pw">PW: </label>
+            <input id="Pw" type="password" placeholder="비밀번호를 입력해주세요." name="pw">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw&color=%23ff0000 -->
+            <label for="Color">Color: </label>
+            <input id="Color" type="color" name="color">
+        </p>
+
+        <p>
+            <!-- file:///C:/tacos?id=id&pw=pw&color=%23ff0000&datetime-local=2022-08-16T19%3A41 -->
+            <label for="Datetime">Datetime: </label>
+            <input id="Datetime" type="datetime-local" name="datetime-local">
+        </p>
+        <button>Form 안에 있는 버튼</button>
+        <button type="button">type이 버튼이면, Form 제출안함 button</button>
+    </form>
+
+    <!-- Youtube로 form 제출 버튼 구현 -->
+    <form action="https://www.youtube.com/results">
+        <p>
+            <label for="search_youtube">검색란: </label>
+            <input id="search_youtube" type="text" placeholder="유튜브에서 보고 싶은 것은?" name="search_query">
+            <button>검색하기</button>
+        </p>
+    </form>
+
+    <form action="https://www.google.co.kr/search">
+        <p>
+            <label for="search_google">검색란: </label>
+            <input id="search_google" type="text" placeholder="구글에서 검색하고 싶은 것은?" name="q">
+            <button>검색하기</button>
+        </p>
+    </form>
+
+    <!-- 체크박스 -->
+    <label for="checkbox">동의여부: </label>
+    <input type="checkbox" id="checkbox">
+
+    <!-- 라디오버튼(묶이지 않음) -->
+    <p>
+        성별선택<br>
+        <label for="radiobutton_male">남성:</label>
+        <input type="radio" id="radiobutton_male">
+
+        <label for="radiobutton_female">여성:</label>
+        <input type="radio" id="radiobutton_female">
+    </p>
+
+    <!-- 라디오버튼(같은 name으로 몪임) -->
+    <p>
+        성별선택<br>
+        <label for="radiobutton_male">남성:</label>
+        <input type="radio" id="radiobutton_male" name="radiobutton_sex">
+
+        <label for="radiobutton_female">여성:</label>
+        <input type="radio" id="radiobutton_female" name="radiobutton_sex">
+    </p>
+
+    <form action="/user_sex">
+        <p>
+            성별선택<br>
+            <!-- file:///C:/user_sex?radiobutton_sex=male -->
+            <label for="radiobutton_male">남성:</label>
+            <input type="radio" id="radiobutton_male" name="radiobutton_sex" value="male">
+
+            <!-- file:///C:/user_sex?radiobutton_sex=female -->
+            <label for="radiobutton_female">여성:</label>
+            <input type="radio" id="radiobutton_female" name="radiobutton_sex" value="female">
+
+            <button>성별정보 제출하기</button>
+        </p>
+    </form>
+
+    <p>
+    <form action="/user_pet">
+        <label for="select_pet">당신이 기르는 애완동물은?</label>
+        <select name="pet" id="select_pet">
+            <option value="">--선택해주세요.--</option>
+            <!-- file:///C:/user_pet?pet=dog -->
+            <option value="dog" name="pet">개</option>
+            <!-- file:///C:/user_pet?pet=cat -->
+            <option value="cat" name="pet">고양이</option>
+            <!-- file:///C:/user_pet?pet=caw -->
+            <option value="caw" name="pet">소</option>
+            <!-- file:///C:/user_pet?pet=lizard -->
+            <option value="lizard" name="pet">도마뱀</option>
+            <!-- file:///C:/user_pet?pet=null -->
+            <option value="null" name="pet">없음</option>
+        </select>
+
+        <div><button>애완동물정보 제출하기</button></div>
+    </form>
+    </p>
+
+    <div>
+        <form action="/slide">
+            <!-- file:///C:/slide?slidebar_value=60 -->
+            <label for="slidebar">슬라이드바: </label>
+            <input type="range" min="10" max="100" step="10" name="slidebar_value" id="slidebar">
+
+            <p><button>슬라이드바 값 전달</button></p>
+
+            <!-- file:///C:/slide?text_dial=100 -->
+            <label for="texDial">텍스트다이얼: </label>
+            <input type="number" min="10" max="100" step="10" name="text_dial" id="texDial">
+            <p><button>텍스트다이얼 값 전달</button></p>
+
+            <!-- file:///C:/slide?textarea=Helloworld -->
+            <label for="textArea">텍스트영역: </label><br>
+            <textarea name="textarea" id="textArea" cols="100" rows="10"></textarea>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
