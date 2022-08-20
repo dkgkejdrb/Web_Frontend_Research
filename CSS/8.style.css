@@ -1,0 +1,19 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+/* ID 속성으로 Sign Up 버튼만 스타일하기 */
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+/* # 과 ID 속성 사이에 띄어쓰기가 있어 오류발생 */
+/* # signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+} */
