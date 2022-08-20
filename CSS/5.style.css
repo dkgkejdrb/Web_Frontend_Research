@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: crimson underline wavy;
+    letter-spacing: 6px;
+
+    /* 픽셀 단위로 글꼴크기 지정 */
+    font-size: 90px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    line-height: 2.5;
+}
