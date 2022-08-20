@@ -11,6 +11,7 @@ button {
     color: #a2d2ff;
 }
 
+/* 클래스 선택자 */
 .tag {
     background-color: #ff006e;
     color: white;
