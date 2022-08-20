@@ -1,0 +1,18 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+.tag {
+    background-color: #ff006e;
+    color: white;
+    font-size: 16px;
+}
