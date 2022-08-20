@@ -1,0 +1,16 @@
+/* 전체 요소 선택자 */
+* {
+    color: pink;
+    background-color: cyan;
+}
+
+/* HTML 요소 선택자 */
+button {
+    font-size: 30px;
+}
+
+/* HTML 요소 여러개 선택하는 법 */
+h1,
+h2 {
+    color: magenta;
+}
