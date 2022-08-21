@@ -1,0 +1,42 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+.tag {
+    background-color: #ff006e;
+    color: white;
+    font-size: 16px;
+}
+
+section a {
+    background-color: #cdb4db;
+    color: #264653;
+    font-weight: bold;
+}
+
+footer .list {
+    background-color: #e76f51;
+    color: white;
+    font-size: 20px;
+}
+
+/* 부모요소(h2)와 형제요소(button)을 지정 */
+h2+button {
+    background-color: #e5989b;
+    color: white;
+}
+
+/* 부모요소(section)와 형제요소(h2)를 지정 */
+section>h2 {
+    background-color: brown;
+    color: aquamarine
+}
