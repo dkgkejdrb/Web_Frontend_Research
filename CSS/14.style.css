@@ -1,0 +1,75 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+.tag {
+    background-color: #ff006e;
+    color: white;
+    font-size: 16px;
+}
+
+section a {
+    background-color: #cdb4db;
+    color: #264653;
+    font-weight: bold;
+}
+
+footer .list {
+    background-color: #e76f51;
+    color: white;
+    font-size: 20px;
+}
+
+h2+button {
+    background-color: #e5989b;
+    color: white;
+}
+
+section>h2 {
+    background-color: brown;
+    color: aquamarine;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+a[href="google.com"] {
+    color: #e9ff70;
+}
+
+.post button:hover {
+    background-color: #ff006e;
+}
+
+.post a:hover {
+    text-decoration: overline;
+}
+
+.post button:active {
+    background-color: #06d6a0;
+}
+
+/* 요소(h2)의 첫번째 글자(::first-lett)를 지정 */
+h2::first-letter {
+    font-size: 50px;
+}
+
+/* 요소(section[class="post"])의 첫번째 줄(::first_line)을 지정 */
+section[class="post"] div::first-line {
+    background-color: red;
+}
+
+/* 커서로 블록 영역을 지정하면 작동한다. */
+*::selection {
+    background-color: orange;
+}
