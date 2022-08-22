@@ -1,0 +1,25 @@
+/* CSS 스타일이 적용될 html 코드
+button을 지정하려고 함
+
+<section class="post_class">
+    <section id="post_id">
+        <button>+Vote</button>
+    <hr>
+    </section>
+</section> */
+
+
+/* id 1순위 적용 */
+#post_id button {
+    background-color: red;
+}
+
+/* 클래스 2순위 적용 */
+.post_class button {
+    background-color: green;
+}
+
+/* 요소 3순위 적용 */
+section button {
+    background-color: blue;
+}
