@@ -1,0 +1,49 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+.tag {
+    background-color: #ff006e;
+    color: white;
+    font-size: 16px;
+}
+
+section a {
+    background-color: #cdb4db;
+    color: #264653;
+    font-weight: bold;
+}
+
+footer .list {
+    background-color: #e76f51;
+    color: white;
+    font-size: 20px;
+}
+
+h2+button {
+    background-color: #e5989b;
+    color: white;
+}
+
+section>h2 {
+    background-color: brown;
+    color: aquamarine;
+}
+
+/* 요소(input) 안에 있는 속성(type="password")을 지정 */
+input[type="password"] {
+    color: red;
+}
+
+a[href="google.com"] {
+    color: #e9ff70;
+}
