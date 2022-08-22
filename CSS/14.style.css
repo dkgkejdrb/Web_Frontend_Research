@@ -73,3 +73,14 @@ section[class="post"] div::first-line {
 *::selection {
     background-color: orange;
 }
+
+/* casecade에 의해 가장 마지막 스타일이 적용됨 */
+h1,
+h2 {
+    background-color: red;
+}
+
+h1,
+h2 {
+    background-color: purple;
+}
