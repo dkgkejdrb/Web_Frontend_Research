@@ -1,0 +1,63 @@
+body {
+    background-color: #ffafcc;
+}
+
+button {
+    font-size: 30px;
+}
+
+#signup {
+    background-color: #bde0fe;
+    color: #a2d2ff;
+}
+
+.tag {
+    background-color: #ff006e;
+    color: white;
+    font-size: 16px;
+}
+
+section a {
+    background-color: #cdb4db;
+    color: #264653;
+    font-weight: bold;
+}
+
+footer .list {
+    background-color: #e76f51;
+    color: white;
+    font-size: 20px;
+}
+
+h2+button {
+    background-color: #e5989b;
+    color: white;
+}
+
+section>h2 {
+    background-color: brown;
+    color: aquamarine;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+a[href="google.com"] {
+    color: #e9ff70;
+}
+
+/* 클래스(post)의 하위요소(button)를 마우스로 가리켰을 때, 배경색이 변경 */
+.post button:hover {
+    background-color: #ff006e;
+}
+
+/* 클래스(post)의 하위요소(a)를 마우스로 가리켰을 때, 윗줄이 그어짐 */
+.post a:hover {
+    text-decoration: overline;
+}
+
+/* 클래스(post)의 하위요소(button)를 활성화시켰을 때, 배경색이 변경 */
+.post button:active {
+    background-color: #06d6a0;
+}
