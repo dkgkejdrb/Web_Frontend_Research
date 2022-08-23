@@ -1,0 +1,13 @@
+body {
+    color: blue;
+}
+
+section {
+    color: red;
+}
+
+/* button 과 input은 상위 요소(section, body)에 적용된 스타일을 상속받지 않는 요소이지만, inherit 으로 상위 요소의 스타일을 상속받을 수 있음 */
+input,
+button {
+    color: inherit;
+}
