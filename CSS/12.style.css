@@ -44,6 +44,7 @@ input[type="password"] {
     color: red;
 }
 
+/* 링크(a) 안에 있는 속성 (href="google.com")을 지정 */
 a[href="google.com"] {
     color: #e9ff70;
 }
