@@ -1,0 +1,44 @@
+div {
+    width: 500px;
+    height: 230px;
+}
+
+h1 {
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+/* 점선 테두리 */
+.one {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: black;
+}
+
+/* 다양한 스타일의 테두리 */
+.two {
+    border-left-style: dashed;
+    border-left-color: red;
+    border-left-width: 4px;
+
+    border-right-style: solid;
+    border-right-color: orange;
+    border-right-width: 6px;
+
+    border-top-style: double;
+    border-top-color: blue;
+    border-top-width: 8px;
+
+    border-bottom-style: ridge;
+    border-bottom-color: green;
+    border-bottom-width: 10px;
+}
+
+/* 테두리의 모깎기 */
+.three {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 8px;
+    border-radius: 20px;
+}
