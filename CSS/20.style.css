@@ -1,0 +1,27 @@
+div {
+    width: 500px;
+    height: 230px;
+}
+
+h1 {
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+/* 웹페이지를 제작할 때, body의 margin을 0px 로 설정 */
+body {
+    margin: 0px;
+}
+
+/* 여백을 왼쪽(50px), 아래(100px) 적용 */
+.one {
+    border-style: solid;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+/* padding 을 위(50px), 오른쪽(100px), 아래(150px), 왼쪽(200px) 적용 */
+.two {
+    margin: 50px 100px 150px 200px;
+}
