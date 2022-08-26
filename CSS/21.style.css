@@ -1,0 +1,41 @@
+.one {
+    width: 500px;
+    height: 200px;
+}
+
+/* 인라인 요소(span)는 margin & padding 적용 시, 위아래로 밀어내지 못함 */
+span {
+    border-style: solid;
+
+    /* 인라인 요소는 width, height 작동하지 않음 */
+    width: 50px;
+    height: 50px;
+
+    /* margin 은 수평방향으로만 적용 */
+    margin: 50px;
+
+    /* padding 도 수평방향으로만 적용 */
+    padding: 10px;
+}
+
+/* 블록 요소(h1)는 widht, height, margin, padding 모두 제대로 적용
+단, 인라인 요소처럼 가로방향으로 나열할 수 없음  */
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+}
+
+/* 인라인 요소처럼 블록 요소들이 라인 사이에 들어갈 수 있게 적용 */
+.inlineblock {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+
+    /* 블록 요소에 인라인블록 디스플레이 속성 적용 */
+    display: inline-block;
+}
