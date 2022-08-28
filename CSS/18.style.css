@@ -42,3 +42,20 @@ h1 {
     border-width: 8px;
     border-radius: 20px;
 }
+
+/* box-sizing 적용 전, 박스 크기(500px+10px+10px) */
+.four {
+    width: 500px;
+    height: 150px;
+    border-style: solid;
+    border-width: 10px;
+}
+
+/* box-sizing 적용 후, 박스 크기(480px+10px+10px) */
+.five {
+    width: 500px;
+    height: 150px;
+    border-style: solid;
+    border-width: 10px;
+    box-sizing: border-box;
+}
