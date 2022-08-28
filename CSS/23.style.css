@@ -1,0 +1,36 @@
+/* em 단위는 부모요소(article)의 font-size에 영향을 받음 */
+article {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* em 단위는 margind 속성에도 적용할 수 있음  */
+.button1 {
+    font-size: 30px;
+    margin: 1em 10em;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+}
+
+.button2 {
+    font-size: 60px;
+    margin: 1em 10em;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+}
+
+/* 자식요소(ul)를 중첩하여 깊이마다 크기가 중첩되는 문제가 발생 */
+ul {
+    font-size: 1.5em;
+}
