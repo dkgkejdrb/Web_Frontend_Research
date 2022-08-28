@@ -1,0 +1,47 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: magenta;
+
+    /* 3초 동안 배경색 변경 */
+    transition: background-color 3s;
+
+    /* 1초 후, 3초 동안 배경색 변경 */
+    /* transition: background-color 3s 1s; */
+
+    /* 배경색은 0.5초, 테두리는 3초 동안 동시에 변경 */
+    /* transition: background-color 0.5s, border-radius 3s; */
+}
+
+.circle:hover {
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+section .square {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: aquamarine;
+    transition: 3s;
+}
+
+section:hover .square {
+    margin-left: 500px;
+}
+
+.square:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+.square:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+.square:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.square:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+}
