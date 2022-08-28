@@ -1,0 +1,12 @@
+section {
+    background-color: #264653;
+    width: 800px;
+    height: 400px;
+}
+
+/* 자식요소(div)의 크기를 상대적단위(%)로 적용하면 부모요소(section)의 크기가 기준이 됨*/
+div {
+    background-color: #e9c46a;
+    width: 70%;
+    height: 50%;
+}
