@@ -18,7 +18,7 @@ span {
     padding: 10px;
 }
 
-/* 블록 요소(h1)는 widht, height, margin, padding 모두 제대로 적용
+/* 블록 요소(h1)는 width, height, margin, padding 모두 제대로 적용
 단, 인라인 요소처럼 가로방향으로 나열할 수 없음  */
 .block {
     width: 100px;
