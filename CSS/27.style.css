@@ -18,6 +18,7 @@
     border-radius: 50%;
 }
 
+/* 부모(section)에 마우스를 얹을 때, 자식(sqaure)가 왼쪽에서 오른쪽으로 이동하는 transition */
 section .square {
     width: 100px;
     height: 100px;
@@ -26,6 +27,7 @@ section .square {
     transition: 3s;
 }
 
+/* transition 은 전환 전과 후의 요소 지정자 이름이 반드시 동일해야 해야 작동함 */
 section:hover .square {
     margin-left: 500px;
 }
