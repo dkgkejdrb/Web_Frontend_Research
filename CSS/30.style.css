@@ -1,0 +1,35 @@
+section {
+    width: 80%;
+    height: 800px;
+
+    /* 배경이미지 추가 */
+    /* 마우스우클릭 > 이미지 주소 복사 */
+    background-image: url("https://images.unsplash.com/photo-1501183007986-d0d080b147f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+
+    /* 배경이미지 크기 설정
+    content 는 잘림없이 나오지만, 이미지가 반복됨
+    cover 는 반복되지 않지만, 잘림 */
+    background-size: cover;
+
+    /* 배경이미지의 위치 설정 */
+    background-position: bottom;
+
+    margin: 0 auto;
+}
+
+section {
+    width: 80%;
+    height: 800px;
+    /* 속기법 */
+    /* background-size 는 position 뒤에 '/'와 함께 사용 */
+    background: violet no-repeat center/50% url("https://images.unsplash.com/photo-1661763633567-bd27413154e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+
+    margin: 0 auto;
+}
+
+
+
+h1 {
+    font-size: 80px;
+    color: white;
+}
