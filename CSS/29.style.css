@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #151b29;
+
+    /* 화면 정중앙에 콘텐츠 배치 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    background: none;
+    border: solid 1px #ffa260;
+    color: #ffa260;
+    padding: 1rem 2rem;
+    transition: 0.25s;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    cursor: pointer;
+    /* boxshadow 효과 */
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #f1ff5c;
+    transform: translateY(-0.25rem);
+}
