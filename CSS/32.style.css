@@ -3,9 +3,23 @@ img {
     width: 30%;
     /* 남은 10%의 크기는 이미지 사이의 여백으로 사용, 10% / 6% = 1.6666% */
     /* margin: 1.6666%; */
-    margin: calc(10%/8);
+    margin: calc(10%/6);
 }
 
 nav {
-    border-bottom: solid 1px;
+    font-size: 1.5rem;
+    width: 40%;
+    border-bottom: solid 2px;
+    margin-left: calc(10%/6);
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.rem_size {
+    font-size: 24px;
+    width: 40%;
+    border-bottom: solid 2px;
+    margin-left: calc(10%/6);
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
 }
