@@ -1,0 +1,33 @@
+/* HTML 페이지의 head에 Google Font 링크 추가
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet"> */
+
+
+/* body 가운데 정렬 셋팅 */
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Google Font 의 CSS 규칙에 따라 폰트 스타일 적용 */
+main {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 21px;
+}
