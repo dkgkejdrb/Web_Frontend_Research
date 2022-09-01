@@ -1,15 +1,19 @@
+/* 바깥쪽 여백을 다 없애고 링크(Home, Sign up)을 양쪽 끝에 위치 */
 nav {
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
+
 }
 
+/* 가운데 링크(Learn More, About, Sign up)를 가운데에 균일하게 배치 */
 div {
     border: solid 10px;
     display: flex;
     flex: 1;
     max-width: 50%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -20,8 +24,13 @@ h1 {
 }
 
 @media (max-width: 601px) {
-    nav {
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav, div {
         flex-direction: column;
+        align-items: center;
     }
 }
 
