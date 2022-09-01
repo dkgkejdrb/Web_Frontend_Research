@@ -11,6 +11,18 @@ section {
     border: 5px solid #03045e;
     /* section을 flexbox로 적용 */
     display: flex;
+
+    /* 요소의 순서대로 가로방향으로 정렬 */
+    flex-direction: row;
+
+    /* 요소의 역순으로 가로방향으로 정렬 */
+    flex-direction: row-reverse;
+
+    /* 요소의 순서대로 세로방향으로 정렬 */
+    flex-direction: column;
+
+    /* 요소의 역순으로 세로방향으로 정렬 */
+    flex-direction: column-reverse;
 }
 
 section div {
