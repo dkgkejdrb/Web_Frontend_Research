@@ -1,0 +1,21 @@
+main {
+    background-color: #03045e;
+    width: 40%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #03045e;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    background-color: #90e0ef;
+    flex: 1 1 50px;
+}
+
+.content {
+    background-color: orange;
+    flex: 6 1 400px;
+}

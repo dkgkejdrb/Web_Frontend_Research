@@ -1,0 +1,62 @@
+header {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;    
+}
+
+h3 {
+    font-size: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;    
+}
+
+h4 {
+    font-size: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* 화면 크기가 최소 800px 보다 커야만 스타일 적용  */
+@media (min-width: 800px) {
+    h1 {
+        color: red;
+    }
+}
+
+/* 화면 크기가 최대 800px 보다 작아야만 스타일 적용  */
+@media (max-width: 800px) {
+    h2 {
+        color: red;
+    }
+}
+
+/* 화면 크기가 900px ~ 1200px 사이에서만 스타일 적용 */
+@media (min-width: 900px) and (max-width: 1200px)
+{
+    h3 {
+        color: magenta
+    }
+}
+
+/* 디바이스가 가로모드일 때에만 작동 */
+@media (orientation: landscape)
+{
+    h4 {
+        color: blue
+    }
+}

@@ -1,0 +1,100 @@
+h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+section {
+    background-color: #03045e;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    border: 5px solid #03045e;
+}
+
+section div {
+    width: 300px;
+    height: 200px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+div:nth-of-type(1) {
+    background-color: #ade8f4;
+}
+
+div:nth-of-type(2) {
+    background-color: #90e0ef;
+    height: 50px;
+}
+
+div:nth-of-type(3) {
+    background-color: #48cae4;
+    height: 350px;
+}
+
+div:nth-of-type(4) {
+    background-color: #00b4d8;
+    height: 100px;
+}
+
+div:nth-of-type(5) {
+    background-color: #0096c7;
+    height: 250px;
+}
+
+.align-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex line 을 기준으로 아이템을 정렬한다. */
+    align-items: center;
+}
+
+.align-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex line 자체를 정렬한다. */
+    align-content: center;
+}
+
+.align-self {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.align-self div {
+    width: 200px;
+    height: 200px;
+}
+
+/* 첫번째 박스만 최하단에 정렬 */
+.align-self div:nth-of-type(1) {
+    background-color: #ade8f4;
+    align-self: flex-end;
+}
+
+.align-self div:nth-of-type(2) {
+    background-color: #90e0ef;
+}
+
+/* 세번째 박스만 최하단에 정렬 */
+.align-self div:nth-of-type(3) {
+    background-color: #48cae4;
+    align-self: flex-start;
+}
+
+.align-self div:nth-of-type(4) {
+    background-color: #00b4d8;
+}
+
+.align-self div:nth-of-type(5) {
+    background-color: #0096c7;
+
+}

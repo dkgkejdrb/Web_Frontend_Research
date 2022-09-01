@@ -5,20 +5,26 @@ h1 {
 
 section {
     background-color: #03045e;
-    width: 90%;
-    height: 500px;
+    width: 80%;
+    height: 800px;
     margin: 0 auto;
     border: 5px solid #03045e;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    /* 줄바꿈 방향을 교차축 방향(상 > 하)로 설정*/
+    justify-content: center;
+    
+    /* 컨테이너의 중앙, 줄바꿈(상>하) */
+    align-items: center;
     flex-wrap: wrap;
 
-    /* 줄바꿈 방향을 교차축 방향(하 > 상)로 설정*/
-    flex-wrap: wrap-reverse;
+    /* 컨테이너의 최상단, 줄바꿈(상>하) */
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    /* 컨테이너의 최하단, 줄바꿈(상>하) */
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 section div {
@@ -28,6 +34,7 @@ section div {
 
 div:nth-of-type(1) {
     background-color: #ade8f4;
+    font-size: 4rem;
 }
 
 div:nth-of-type(2) {

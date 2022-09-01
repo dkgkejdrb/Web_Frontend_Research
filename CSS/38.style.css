@@ -1,0 +1,56 @@
+h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+section {
+    background-color: #03045e;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    border: 5px solid #03045e;
+    
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+div {
+    height: 100px;
+    text-align: center;
+    font-size: 5rem;
+
+    /* flex-basis 와 width 를 함께 사용하면, widht 적용안됨. */
+    width: 50px;
+    /* 처음 실행되는 화면에서 200px 만큼 너비 적용 */
+    flex-basis: 100px;
+}
+
+div:nth-of-type(1) {
+    background-color: #ade8f4;
+    /* 남는 화면의 크기를 첫번째 박스와 두번째 박스가 1:2 비율로 가져감 */
+    flex-grow: 1;
+}
+
+div:nth-of-type(2) {
+    background-color: #90e0ef;
+    /* 남는 화면의 크기를 첫번째 박스와 두번째 박스가 1:2 비율로 가져감 */
+    flex-grow: 2;
+}
+
+div:nth-of-type(3) {
+    background-color: #48cae4;
+    /* 화면의 크기가 줄어들더라도 다른 요소에 비해 2만큼 더 줄어들게 함 */
+    flex-shrink: 2;
+}
+
+div:nth-of-type(4) {
+    background-color: #00b4d8;
+}
+
+div:nth-of-type(5) {
+    background-color: #0096c7;
+    /* 화면의 크기가 줄어들더라도 줄어들지 않음 */
+    flex-shrink: 0;
+}
