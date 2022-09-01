@@ -1,0 +1,47 @@
+h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+section {
+    background-color: #03045e;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #03045e;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* 교차축의 기본 방향은 상 > 하  */
+    flex-wrap: wrap-reverse;
+
+    /* 교차축의 방향을 반전 하 > 상 */
+    flex-wrap: wrap;
+}
+
+section div {
+    width: 400px;
+    height: 200px;
+}
+
+div:nth-of-type(1) {
+    background-color: #ade8f4;
+}
+
+div:nth-of-type(2) {
+    background-color: #90e0ef;
+}
+
+div:nth-of-type(3) {
+    background-color: #48cae4;
+}
+
+div:nth-of-type(4) {
+    background-color: #00b4d8;
+}
+
+div:nth-of-type(5) {
+    background-color: #0096c7;
+}
