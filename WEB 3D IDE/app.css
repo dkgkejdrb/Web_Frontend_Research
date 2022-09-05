@@ -156,8 +156,9 @@ html {
 }
 
 .studio__section-right--edit {
-    /* position: relative;
-    width: 100%; */
+    /* position: relative; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .tutorial {
@@ -181,15 +182,32 @@ html {
 }
 
 /* button 스타일 */
-button {
+.tutorial__menu-list-btn {
     border: 1px solid #9dd1ff;
     border-radius: 10px;
     color: #348efe;
     padding: 10px 10px;
     transition: all 0.2s ease-in-out;
+    
+    text-decoration: none;
 }
 
-button:hover {
+.tutorial__menu-list-btn:hover {
+    background-color: #348efe;
+    color: white;
+    cursor: pointer;
+}
+
+.tutorial__close-btn {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    padding: 10px 10px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.tutorial__close-btn:hover {
     background-color: #348efe;
     color: white;
     cursor: pointer;
@@ -213,8 +231,11 @@ button:hover {
 }
 
 .tutorial .tutorial__footer {
-    width: 100px;
+    width: 100%;
     height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h2 {
@@ -271,4 +292,60 @@ img {
     padding: 1px 6px;
     background-color: rgba(136, 136, 182, 0.1);
     border-radius: 4px;
+}
+
+.tutorial__body .tutorial__mission_tip {
+    background-color: #FFF8DC;
+    width: 420px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.slide-prev-btn {
+    display: flex;
+    width: 106px;
+    height: 44px;
+    color: grey;
+    background-color: rgba(136, 136, 182, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 5px 5px 100px;
+    font-size: 3em;
+}
+
+.slide-next-btn {
+    display: flex;
+    width: 106px;
+    height: 44px;
+    color: grey;
+    background-color: rgba(136, 136, 182, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 100px 100px 5px;
+    font-size: 3em;
+}
+
+.tutorial__footer p {
+    font-size: 1.4em;
+}
+
+.tutorial__body::-webkit-scrollbar {
+    width: 15px;
+}
+
+.tutorial__body::-webkit-scrollbar-thumb {
+    background-color: #adb5bd;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-radius: 15px;
+}
+
+.tutorial__body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0)
 }
