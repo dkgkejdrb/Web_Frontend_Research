@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.firstrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.hyphen::before {
+    content: "-";
+}
+
+.hyphen::after {
+    content: "_";
+}
+
+.secondrow > p:not(.bold) {
+    color: red;
+}
+
+.secondrow :not(p) {
+    font-weight: 700;
+} 
