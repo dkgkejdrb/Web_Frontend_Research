@@ -68,7 +68,7 @@ table {
     overflow: hidden;
 }
 
-.studio__header {
+.studio > .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,47 +77,41 @@ table {
     border-bottom: 1px solid #000;
 }
 
-.studio__header_left {
+.studio > .header > .left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.studio__header_left .list__button {
+.studio > .header > .left .list__button {
     margin-right: 20px;
 }
 
-.current__index_title {
+.studio > .header > .left > .current__index_title {
     font-weight: 500;
 }
 
-.studio__header_right {
+.studio > .header > .right {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.studio__header_right .course__evaluation_btn {
+.studio > .header > .right > .course__evaluation_btn.btn {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    line-height: 1.714286;
+    border-radius: 3px;
     cursor: pointer;
+    background-color: transparent;
     color: #fff;
     border: 1px solid black;
     transition: all 0.15s ease-in-out;
 }
 
-.studio__header_right .course__evaluation_btn:hover {
+.studio > .header > .right > .course__evaluation_btn:hover {
     background-color: #313338;
     border: 1px solid transparent
-}
-
-.btn_sm {
-    padding: 0.25rem 0.625rem;
-    font-size: 0.75rem;
-    line-height: 1.714286;
-    border-radius: 3px;
-}
-
-.btn_outline-dark {
-    background-color: transparent;
 }
 
 .btn {
@@ -128,26 +122,26 @@ table {
     border: 1px solid transparent;
 }
 
-.imoji_btn {
+.studio > .header > .right > .imoji_btn {
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 22px;
 }
 
-.studio__body_frame {
+.studio > .body_frame {
     display: block;
     flex: 1 0 auto;
     height: calc(100vh - 100px);
 }
 
-.studio__body {
+.studio > .body_frame > .body {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
-.studio__body_left {
+.studio > .body_frame > .body > .left__tutorial {
     display: flex;
     flex-direction: column;
     flex-basis: 550px;
@@ -155,7 +149,7 @@ table {
     border-right: 1px solid #ced0da;
 }
 
-.tutorial__header {
+.studio > .body_frame > .body > .left__tutorial > .header {
     position: sticky;
     color: #313338;
     background-color: #f7f8fa;
@@ -166,14 +160,29 @@ table {
     border-bottom: 1px solid #e7e8ef;
 }
 
-.tutorial__body {   
+.studio > .body_frame > .body > .left__tutorial > .body {   
     background-color: #fff;
     color: #000;
     padding: 1.875rem;
     overflow: auto;
 }
 
-.tutorial__body_firstrow {
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar {
+    width: 15px;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar-thumb {
+    background-color: #adb5bd;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-radius: 15px;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .firstrow {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.375rem;
@@ -192,49 +201,41 @@ table {
     font-size: 0.75rem;
 }
 
-#zoomController .zoom_in {
+#zoomController > .zoom_in {
     border-right: 1px solid #ced0da;
     padding: 1px 5px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
 }
 
-#zoomController .zoom_out {
+#zoomController > .zoom_in:hover {
+    background-color: #313338;
+    border-right: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
+}
+
+#zoomController > .zoom_out {
     border-left: 1px solid #ced0da;
     padding: 1px 5px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
 }
 
-#zoomController .zoom_percentage {
-    padding: 1px 5px;
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;
-}
-
-#zoomController .zoom_in:hover {
-    background-color: #313338;
-    border-right: 1px solid transparent;
-    border-radius: 5px 0 0 5px;
-}
-
-#zoomController .zoom_out:hover {
+#zoomController > .zoom_out:hover {
     background-color: #313338;
     border-left: 1px solid transparent;
     border-radius: 0 5px 5px 0;
 }
 
-#zoomController .zoom_percentage:hover {
-    background-color: #313338;
-    color: #ced0da;
+#zoomController > .zoom_percentage {
+    padding: 1px 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
 }
 
-.tutorial__body_title_2 {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #e7e8ef;
+#zoomController > .zoom_percentage:hover {
+    background-color: #313338;
+    color: #ced0da;
 }
 
 .title_2 {
@@ -243,40 +244,36 @@ table {
     line-height: 1.5;
 }
 
-.tutorial__body_contents {
+.studio > .body_frame > .body > .left__tutorial > .body > .contents {
     /* 한중일 텍스트에서 줄바꿈시 단어를 끊지 않음 */
     word-break: keep-all;
     line-height: 200%;
 }
 
-.tutorial__body_contents p {
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > p {
     margin-top: 1.875rem;
     width: 100%;
 }
 
-.tutorial__body_contents_img_1 {
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_1 {
     margin-top: 1.875rem;
 }
 
-.tutorial__body_contents_img_1 img {
-    /* vertical-align: middle;
-    overflow: clip; */
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_1 > img {
     width: 490px;
     object-fit: cover;
 }
 
-.tutorial__body_contents_img_2 {
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_2 {
     margin-top: 1.875rem;
 }
 
-.tutorial__body_contents_img_2 img {
-    /* vertical-align: middle;
-    overflow: clip; */
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_2 > img {
     width: 490px;
     object-fit: cover;
 }
 
-.tutorial__footer {
+.left__tutorial > .footer {
     position: sticky;
     color: #313338;
     background-color: #f7f8fa;
@@ -288,12 +285,12 @@ table {
     border-bottom: 1px solid #e7e8ef;
 }
 
-.tutorial__footer_contents {
+.footer_contents {
     color: #000;
     padding: 1.875rem;
 }
 
-.studio__footer {
+.studio > .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -303,26 +300,15 @@ table {
     background-color: #384051;
 }
 
-
-.studio__footer_left {
+.studio > .footer > .left {
     flex: 1;
 }
 
-.studio__footer_middle {
-    flex: 1;
-}
-
-.studio__footer_right {
-    flex: 1;
-}
-
-
-
-.studio__footer_left nav {
+.studio > .footer > .left > nav {
     height: 50px;
 }
 
-.studio__footer_left ol {
+.studio > .footer > .left > nav > ol {
     height: inherit;
     display: flex;
     flex-direction: row;
@@ -330,29 +316,27 @@ table {
     align-items: center;
 }
 
-li a {
+.studio > .footer > .left > nav > ol > li > a {
     text-decoration: none;
     color: #f1f3f6;
 }
 
-li span {
+.studio > .footer > .left > nav > ol > li > span {
     padding: 0 0.125rem 0 0.5rem;
     text-align: center;
 }
 
-.studio__footer_middle {
+.studio > .footer > .middle {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.border_btn {
-    border: 1px solid black;
-    text-decoration: none;
-    color: #f1f3f6;
+    flex: 1;
 }
 
 .btn_normal {
+    border: 1px solid black;
+    text-decoration: none;
+    color: #f1f3f6;
     padding: 0.5rem 0.8rem;
     font-size: 0.75rem;
     line-height: 1.714286;
@@ -365,53 +349,31 @@ li span {
     border: 1px solid transparent
 }
 
-.studio__footer_right {
+.studio > .footer > .right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex: 1;
 }
 
-.studio__footer_right a {
+.studio > .footer > .right > a {
     text-decoration: none;
     color: #f1f3f6;
 }
 
-.studio__body_right {
+.studio > .body_frame > .body > .right__editor {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-.studio__body_right_header {
+.studio > .body_frame > .body > .right__editor > .header {
+    display: flex;
     height: 41px;
 }
 
-.studio__body_right_editor {
-    width: 100%;
-    height: 100%;
-}
-
-.tutorial__body::-webkit-scrollbar {
-    width: 15px;
-}
-
-.tutorial__body::-webkit-scrollbar-thumb {
-    background-color: #adb5bd;
-    background-clip: padding-box;
-    border: solid transparent;
-    border-radius: 15px;
-}
-
-.tutorial__body::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0)
-}
-
-.studio__body_right_header {
-    display: flex;
-}
-
-.studio__body_right_header-left {
+.studio > .body_frame > .body > .right__editor > .header > .left {
     display: flex;
     justify-content: center;
     width: 130px;
@@ -422,19 +384,19 @@ li span {
     border-radius: 3px 3px 0 0;
 }
 
-.studio__body_right_header-left a {
+.studio > .body_frame > .body > .right__editor > .header > .left > a {
     text-decoration: none;
     color: #f2f3f7;
 }
 
-.studio__body_right_header-right {
+.studio > .body_frame > .body > .right__editor > .header > .right {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
 
-.studio__body_right_header-right .btn_sm_2 {
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2 {
     text-decoration: none;
     color: #f2f3f7;
     padding: 0.3rem 0.8rem;
@@ -446,16 +408,38 @@ li span {
     transition: all 0.15s ease-in-out;
 }
 
-.studio__body_right_header-right .btn_sm_2:hover {
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:hover {
     background-color: #467dc696;
 }
 
-.studio__body_right_header-right .btn_sm_2:nth-of-type(5) {
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:nth-of-type(5) {
     margin-right: 1.3rem;
     background-color: #18bbb8;
 }
 
-.studio__body_right_header-right .btn_sm_2:nth-of-type(5):hover {
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:nth-of-type(5):hover {
     margin-right: 1.3rem;
-    background-color: #18bbb8;
+    background-color: #0c6968;
+}
+
+.studio > .body_frame > .body > .right__editor > .body {
+    width: 100%;
+    height: 100%;
+}
+
+/* mediaquery 사용시 순서 중요 */
+@media all and (max-width: 600px) {
+    .studio > .body_frame > .body {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .studio > .body_frame > .body > .right__editor > .body {
+        height: 100vh;
+    }
+
+    .studio > .footer > .left > nav {
+        display: none;
+    }
 }
