@@ -1,0 +1,1 @@
+console.log("YEAH THIS IS MY FIRST JAVASRIPT PAGE!!");
