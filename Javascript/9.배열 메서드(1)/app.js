@@ -28,10 +28,13 @@ let comboParty = cat.concat(dog);
 console.log(cat);
 
 // ['black', 'white', 'brown', 'big', 'middle', 'small']
-console.log(comboParty);     
+console.log(comboParty);
 
 // 4
 console.log(comboParty.indexOf('middle'));
+
+// true, false
+console.log(`${comboParty.includes('small')}, ${comboParty.includes('red')}`);
 
 comboParty.reverse();
 // ['small', 'middle', 'big', 'brown', 'white', 'black']
