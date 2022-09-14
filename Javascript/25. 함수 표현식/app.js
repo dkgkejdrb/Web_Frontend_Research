@@ -114,3 +114,84 @@
 // console.log(hen.layAnEgg()); // "EGG"
 // console.log(hen.layAnEgg()); // "EGG"
 // console.log(hen.eggCount); // 2
+
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// numbers.forEach(function(el) {
+//     console.log(el);
+// })
+
+// numbers.forEach(function(el){
+//     if (!(el % 2))  console.log(el);
+// })
+
+
+// const moives = [
+//     {
+//         title: 'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title: 'Stand By Me',
+//         score: 85
+//     },
+//     {
+//         title: 'Parasite',
+//         score: 95
+//     }
+// ]
+
+// moives.forEach(function(movie) {
+// // Amadeus - 99 / 10
+// // Stand By Me - 85 / 10
+// // Parasite - 95 / 10
+//     console.log(`${movie['title']} - ${movie['score']} / 10`)
+// })
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// // 배열(numbers)의 요소를 변경하지는 않음.
+// numbers.map(function(number) {
+//     return number * 2;
+// })
+
+// // 배열(numbers)에서 반환값을 변수(new_numbers)에 맵핑.
+// const doubles = numbers.map(function(number){
+//     return number * 2;
+// })
+
+// console.log(doubles);
+
+
+// const movies = [
+//     {
+//         title: 'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title: 'Stand By Me',
+//         score: 85
+//     },
+//     {
+//         title: 'Parasite',
+//         score: 95
+//     }
+// ]
+
+// const new_movies = movies.map(function(movie){
+//     return `${movie['title']} - ${movie['score']} / 10`;
+// })
+
+// console.log(new_movies);
+
+
+// DO NOT ALTER THE FOLLOWING CODE:
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+// Write your code here
+const firstNames = fullNames.map(function(names){
+    return `${names['first']}`;
+})
+
+console.log(firstNames);
