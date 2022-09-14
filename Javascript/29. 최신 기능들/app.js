@@ -32,13 +32,13 @@
 const feline = { legs: 4, family: 'Felidae'};
 const canine = { family: 'Caninae', furry: true};
 
-// 객체 복사와 확장
+// 스프레드를 통한 객체 복사와 확장
 // {family: 'Caninae', furry: true, isPet: true}
 const dog = { ...canine, isPet: true};
 // {legs: 4, family: 'Felidae', genus: 'Panthera'}
 const lion = { ...feline, genus: 'Panthera'};
 
 
-// 객체 복사와 결합
+// 스프레드를 통한 객체 복사와 결합
 // {legs: 4, family: 'Caninae', furry: true}
 const catDog = { ...feline, ...canine};
