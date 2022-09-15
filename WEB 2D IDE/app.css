@@ -29,7 +29,9 @@ html {
     box-sizing: border-box;
 }
 
+
 body {
+    /* 기본 font-size 14 */
     font-size: .875rem;
     font-weight: 400;
 	line-height: 1.714286;
@@ -202,7 +204,7 @@ table {
 }
 
 #zoomController > .zoom_in {
-    border-right: 1px solid #ced0da;
+    border-left: 1px solid #ced0da;
     padding: 1px 5px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
@@ -210,12 +212,12 @@ table {
 
 #zoomController > .zoom_in:hover {
     background-color: #313338;
-    border-right: 1px solid transparent;
-    border-radius: 5px 0 0 5px;
+    border-left: 1px solid transparent;
+    border-radius: 0 5px 5px 0;
 }
 
 #zoomController > .zoom_out {
-    border-left: 1px solid #ced0da;
+    border-right: 1px solid #ced0da;
     padding: 1px 5px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
@@ -223,8 +225,8 @@ table {
 
 #zoomController > .zoom_out:hover {
     background-color: #313338;
-    border-left: 1px solid transparent;
-    border-radius: 0 5px 5px 0;
+    border-right: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
 }
 
 #zoomController > .zoom_percentage {
