@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World! - 엔트리 프로그래밍 기초부터 게임 만들기까지</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="root">
+        <div class="studio">
+            <div class="header">
+                <div class="left">
+                    <div class="list__button_true"></div>
+                    <a class="list__button" href="/list__button_true">
+                        <img src="list-icon.png" width="25px" height="25px">
+                    </a>
+                    <div class="current__index_title">2. Variable and Data Type</div>
+                </div>
+                <div class="right">
+                    <button class="course__evaluation_btn btn">⭐ 수강평 남기기</button>
+                    <a class="imoji_btn" href="/settings" rel="hello">⚙️</a>
+                    <a class="imoji_btn" href="/notification">🔔</a>
+                    <a class="imoji_btn" href="/myinfo">😃</a>
+                </div>
+            </div>
+            <div class="body_frame">
+                <div class="body">
+                    <!-- studio 왼쪽 자습서 -->
+                    <div class="left__tutorial">
+                        <div class="header">배우기</div>
+                        <div class="body">
+                            <div class="firstrow">
+                                <div class="tutorial__body_title_1">
+                                    <span class="title_1">문자열 포매팅</span>
+                                </div>
+                                <div id="zoomController">
+                                    <div class="zoom_out">➖</div>
+                                    <div class="zoom_percentage">100%</div>                                   
+                                    <div class="zoom_in">➕</div>
+                                </div>
+                            </div>
+                            
+                            <div class="secondrow">
+                                <span class="title_2">문자열 포매팅</span>
+                            </div>
+                            <div class="contents">
+                                <p>정수, 실수 또는 문자열을 포함하는 문자열을 만드는 것을 문자열 포매팅이라고 합니다.</p>
+                                <p>-문자열 안에 포함할 정수의 위치는 %d, 실수의 위치는 %f, 문자열의 위치는 %s로 표시해 줍니다.</p>
+                                <p>-정수, 실수, 문자열 데이터 또는 데이터를 저장한 변수는 큰 따옴표 바깥의% 다음에 나열합니다.</p>
+                                <p>-문자열 안의 특정 부분을 원하는 값으로 바꾸어야 하는 경우에 유용하게 사용할 수 있습니다.</p>
+                                <p>-%f는 실수를 소수점 이하 6 자리까지 표시합니다. 소수점 이하 자릿수를 지정하고 싶다면 %.자릿수f형식으로 사용해야 합니다.</p>
+                            </div>                            
+                        </div>
+                        <div class="footer">실습 내용</div>
+                        <div class="footer_contents">
+                            <p>jen과 kai가 오늘 anna의 집에서 열리는 저녁 파티에 대해 이야기하고 있습니다.</p>
+                            <p>변수를 활용한 문자열 포매팅을 사용하여 대화를 완성할 수 있도록 코드를 추가해 봅시다.</p>
+                        </div>
+                    </div>
+
+                    <!-- studio 오른쪽 에디터 -->
+                    <div class="right__editor">
+                        <div class="header">
+                            <div class="left">
+                                <a href="/scratch-home">언어: python</a>
+                            </div>
+                            <div class="right">
+                                <a class="btn_sm_2" href="/reset">초기화</a>
+                                <a class="btn_sm_2" href="/save">저장</a>
+                                <a class="btn_sm_2" href="/download">다운로드</a>
+                                <a class="btn_sm_2" href="/maxscreen">최대화면</a>
+                                <a class="btn_sm_2" href="/submit">제출</a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="left">
+                                <div class="screen">
+                                    <div class="contents"></div>
+                                </div>
+                                <div class="objList"></div>
+                            </div>
+                            <div class="right">
+                                <div class="codeEditor"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="left">
+                    <nav>
+                        <ol>
+                            <li>
+                                <a href="/learn/my">내 강좌</a>
+                            </li>
+                            <li>
+                                <span> > </span>
+                                <a href="/learn/lecture/1361">스크래치 프로그래밍 - 기초부터 게임 만들기까지!</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="middle">
+                    <div class="left">
+                        <a class="btn_normal" href="/prev">&lt; 이전</a>
+                    </div>
+                    <div class="middle">4/58</div>
+                    <div class="right">
+                        <a class="btn_normal" href="/next">&gt; 다음</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="/QA">📖QA</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

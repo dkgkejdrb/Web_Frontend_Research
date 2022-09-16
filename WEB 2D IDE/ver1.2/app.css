@@ -1,0 +1,525 @@
+/* CSS 스타일 리셋 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* 기본 font-size 14 */
+    font-size: .875rem;
+    font-weight: 400;
+	line-height: 1.714286;
+    text-align: left;
+}
+
+button {
+    text-transform: none;
+    overflow: visible;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.studio {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #3dbcd2;
+    color: #f4f4f4;
+    overflow: hidden;
+}
+
+.studio > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+    border-bottom: 1px solid #f1f3f6a4;
+}
+
+.studio > .header > .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.studio > .header > .left > .list__button {
+    width: 30px;
+    
+    margin-right: 20px;
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+}
+
+.studio > .header > .left .list__button:hover {
+    background-color: #f1f3f6a4;
+    border: 0 solid transparent;
+    
+}
+
+.studio > .header > .left > .current__index_title {
+    font-weight: bold;
+}
+
+.studio > .header > .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.studio > .header > .right > .course__evaluation_btn.btn {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    line-height: 1.714286;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid black;
+    transition: all 0.15s ease-in-out;
+}
+
+.studio > .header > .right > .course__evaluation_btn:hover {
+    background-color: #313338;
+    border: 1px solid transparent
+}
+
+.btn {
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+}
+
+.studio > .header > .right > .imoji_btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 22px;
+}
+
+.studio > .body_frame {
+    display: block;
+    flex: 1 0 auto;
+    height: calc(100vh - 100px);
+}
+
+.studio > .body_frame > .body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.studio > .body_frame > .body > .left__tutorial {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 550px;
+    background-color: #fff;
+    border-right: 1px solid #ced0da;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .header {
+    position: sticky;
+    color: #313338;
+    background-color: #f7f8fa;
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #e7e8ef;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body {   
+    background-color: #fff;
+    color: #000;
+    padding: 1.875rem;
+    overflow: auto;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar {
+    width: 15px;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar-thumb {
+    background-color: #adb5bd;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-radius: 15px;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .firstrow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.375rem;
+}
+
+.title_1 {
+    color: #6c789a;
+    letter-spacing: -0.06rem;
+}
+
+#zoomController {
+    display: inline-flex;
+    vertical-align: middle;
+    border: 1px solid #ced0da;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+#zoomController > .zoom_in {
+    border-left: 1px solid #ced0da;
+    padding: 1px 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+#zoomController > .zoom_in:hover {
+    background-color: #313338;
+    border-left: 1px solid transparent;
+    border-radius: 0 5px 5px 0;
+}
+
+#zoomController > .zoom_out {
+    border-right: 1px solid #ced0da;
+    padding: 1px 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+#zoomController > .zoom_out:hover {
+    background-color: #313338;
+    border-right: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
+}
+
+#zoomController > .zoom_percentage {
+    padding: 1px 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+#zoomController > .zoom_percentage:hover {
+    background-color: #313338;
+    color: #ced0da;
+}
+
+.title_2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents {
+    /* 한중일 텍스트에서 줄바꿈시 단어를 끊지 않음 */
+    word-break: keep-all;
+    line-height: 200%;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > p {
+    margin-top: 1.875rem;
+    width: 100%;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_1 {
+    margin-top: 1.875rem;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_1 > img {
+    width: 490px;
+    object-fit: cover;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_2 {
+    margin-top: 1.875rem;
+}
+
+.studio > .body_frame > .body > .left__tutorial > .body > .contents > .frame__img_2 > img {
+    width: 490px;
+    object-fit: cover;
+}
+
+.left__tutorial > .footer {
+    position: sticky;
+    color: #313338;
+    background-color: #f7f8fa;
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #e7e8ef;
+    border-bottom: 1px solid #e7e8ef;
+}
+
+.footer_contents {
+    color: #000;
+    padding: 1.875rem;
+    word-break: keep-all;
+    line-height: 200%;
+}
+
+.studio > .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+    border-top: 1px solid #f1f3f6a4;;
+    background-color: #ebf8fa;
+}
+
+.studio > .footer > .left {
+    flex: 1;
+}
+
+.studio > .footer > .left > nav {
+    height: 50px;
+}
+
+.studio > .footer > .left > nav > ol {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+}
+
+.studio > .footer > .left > nav > ol > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.studio > .footer > .left > nav > ol > li > span {
+    padding: 0 0.125rem 0 0.5rem;
+    text-align: center;
+}
+
+.studio > .footer > .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    flex: 1;
+}
+
+.btn_normal {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #f6f2f1;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1.714286;
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+    background-color: #467dc6;
+}
+
+.btn_normal:hover {
+    background-color: #467dc696;
+    /* border: 1px solid transparent */
+}
+
+.studio > .footer > .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.studio > .footer > .right > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.studio > .body_frame > .body > .right__editor {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.studio > .body_frame > .body > .right__editor > .header {
+    display: flex;
+    height: 41px;
+}
+
+.studio > .body_frame > .body > .right__editor > .header > .left {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    border-top: 2px solid #609ae9;
+    background-color: #323232;
+    padding: 0.5rem 1.5rem 0.4375rem;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+}
+
+.studio > .body_frame > .body > .right__editor > .header > .left > a {
+    text-decoration: none;
+    color: #f2f3f7;
+}
+
+.studio > .body_frame > .body > .right__editor > .header > .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2 {
+    text-decoration: none;
+    color: #f2f3f7;
+    background-color: #467dc6;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1.714286;
+    border-radius: 3px;
+    margin-right: 0.32rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:hover {
+    background-color: #467dc696;
+}
+
+/* .studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:nth-of-type(5) { */
+#submit {
+    cursor: pointer;
+    margin-right: 1.3rem;
+    background-color: #18bbb8;
+}
+
+/* .studio > .body_frame > .body > .right__editor > .header > .right > .btn_sm_2:nth-of-type(5):hover { */
+#submit:hover {
+    margin-right: 1.3rem;
+    background-color: #0c6968;
+}
+
+.studio > .body_frame > .body > .right__editor > .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* mediaquery 사용시 순서 중요 */
+@media all and (max-width: 600px) {
+    .studio > .body_frame > .body {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .studio > .body_frame > .body > .right__editor > .body {
+        height: 100vh;
+    }
+
+    .studio > .footer > .left > nav {
+        display: none;
+    }
+}
+
+.studio > .body_frame > .body > .right__editor > .body {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 4;
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .left > .screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 169, 10);
+    height: 60%;
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .left > .screen > .contents {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    color: #000;
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .left > .objList {
+    background-color: green;
+    height: 40%;
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .right {
+    display: flex;
+    flex-grow: 6;
+    background-color: rgb(60, 60, 255)
+}
+
+.studio > .body_frame > .body > .right__editor > .body > .right > .codeEditor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#editor {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+
