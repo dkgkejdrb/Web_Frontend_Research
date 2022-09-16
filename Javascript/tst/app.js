@@ -52,7 +52,7 @@ const sum1 = (a) => {
     }
 }
 
- console.log(sum1(1)(2)(3)(4))
+ console.log(sum1(1)(2)(3)(4)) // 10
 
 
  // 익명함수 없이 클로저 체이닝한 예
@@ -73,4 +73,4 @@ const M1 = mul1(1);
 const M2 = M1(2);
 const M3 = M2(3);
 const M4 = M3(4);
-console.log(M4);
+console.log(M4); // 24
