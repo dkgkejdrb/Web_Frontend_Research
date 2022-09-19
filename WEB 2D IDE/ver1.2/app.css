@@ -477,20 +477,26 @@ table {
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex-grow: 4;
+    /* flex-grow: 4; */
 }
 
 .studio > .body_frame > .body > .right__editor > .body > .left > .screen {
     display: flex;
+    box-sizing: content-box;
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 169, 10);
+    width: 655px;
     height: 60%;
 }
 
 .studio > .body_frame > .body > .right__editor > .body > .left > .screen > .contents {
-    background-color: white;
-    width: 90%;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 596px;
     height: 90%;
     border-radius: 20px;
     color: #000;
@@ -498,12 +504,14 @@ table {
 
 .studio > .body_frame > .body > .right__editor > .body > .left > .objList {
     background-color: green;
+    width: 655px;
     height: 40%;
 }
 
 .studio > .body_frame > .body > .right__editor > .body > .right {
     display: flex;
-    flex-grow: 6;
+    /* flex-grow: 6; */
+    width: 836.69px;
     background-color: rgb(60, 60, 255)
 }
 
